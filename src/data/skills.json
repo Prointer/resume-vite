@@ -1,0 +1,32 @@
+{
+  "hard": [
+    { "name": "React", "icon": "FaReact", "level": 80 },
+  { "name": "JavaScript", "icon": "SiJavascript", "level": 78 },
+  { "name": "Python", "icon": "FaPython", "level": 65 },
+  { "name": "HTML", "icon": "FaHtml5", "level": 80 },
+  { "name": "CSS", "icon": "FaCss3Alt", "level": 78 },
+  { "name": "Vite", "icon": "SiVite", "level": 70 },
+  { "name": "Git", "icon": "FaGitAlt", "level": 75 },
+  { "name": "Node.js", "icon": "FaNodeJs", "level": 70 },
+  { "name": "MySQL", "icon": "GrMysql", "level": 68 },
+  { "name": "Tailwind CSS", "icon": "SiTailwindcss", "level": 75 },
+  { "name": "Bootstrap", "icon": "FaBootstrap", "level": 70 },
+  { "name": "Postman", "icon": "SiPostman", "level": 72 },
+  { "name": "OS Windows", "icon": "FaWindows", "level": 78 },
+  { "name": "OS Linux", "icon": "FaLinux", "level": 72 },
+  { "name": "Docker", "icon": "FaDocker", "level": 68 },
+  { "name": "Kubernetes", "icon": "SiKubernetes", "level": 60 }
+  ],
+  "soft": [
+     { "name": "Teamwork", "icon": "FaUsers" , "level": 85 },
+  { "name": "Active Listening", "icon": "MdHearing", "level":95 },
+  { "name": "Problem Solving", "icon": "GiPuzzle", "level":82 },
+  { "name": "Adaptability", "icon": "GiFlexibleStar", "level":77 },
+  { "name": "Creativity", "icon": "FaPaintBrush", "level":90 },
+  { "name": "Effective Communication", "icon": "BiConversation", "level":80 },
+  { "name": "Critical Thinking", "icon": "GiBrain", "level":93 },
+  { "name": "Attention to Detail", "icon": "BsSearch", "level":75 },
+  { "name": "Leadership", "icon": "RiTeamLine", "level": 85 },
+  { "name": "Analytical Thinking", "icon": "HiOutlineChartBar", "level":73 }
+  ]
+}
