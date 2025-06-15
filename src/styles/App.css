@@ -39,59 +39,6 @@ body {
   height: 100vh;
 }
 
-/* Sidebar */
-.sidebar-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.sidebar-footer {
-  padding: 0.5rem 0;
-  padding-bottom: 30px;
-  margin-top: auto;
-}
-.ps-sidebar-root {
-  height: 100vh;
-  background-color: var(--sidebar-bg);
-  border-right: 1px solid #2d2d44;
-  color: var(--text-color);
-}
-
-.ps-menu-button {
-  padding: 16px;
-  transition: background 0.3s ease, color 0.3s ease;
-  color: var(--sidebar-text) !important; 
-  background-color: transparent;
-}
-
-.ps-menu-button:hover,
-.ps-menu-button:focus {
-  background-color: var(--menu-hover) !important;
-  color: var(--sidebar-text) !important;
-}
-
-.ps-menu-button.active ,
-.ps-menu-button.ps-active {
-  background-color: var(--menu-active) !important;
-  color: var(--sidebar-text) !important;
-}
-.ps-menu-button a {
-  color: var(--sidebar-text);
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.ps-menu-button svg {
-  transition: color 0.3s ease;
-}
-
-.ps-menu-button:hover svg {
-  color: var(--sidebar-text);
-}
-
 /* Page content */
 .page-content {
   flex-grow: 1;
@@ -164,3 +111,4 @@ h1 {
 .theme-toggle-button:hover {
   background-color: var(--menu-hover);
 }
+/* Responsive styles */
