@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar'
@@ -13,7 +14,7 @@ import Skills from './pages/Skills'
 import { FaGraduationCap } from "react-icons/fa6"
 import { GiSkills } from "react-icons/gi"
 import { IoHome } from "react-icons/io5"
-import { MdContactPhone } from "react-icons/md"
+import { MdContactPhone, MdDarkMode, MdLightMode } from 'react-icons/md'
 import { RiPagesFill } from "react-icons/ri"
 import './styles/App.css'
 
@@ -44,6 +45,7 @@ function App() {
     <Router>
       <div className="app-wrapper">
         <Sidebar>
+          <div className='sidebar-wrapper'>
           <Menu>
             <MenuItem icon={<IoHome />}>
               <Link to="/about">{t('menu.about')}</Link>
@@ -60,17 +62,28 @@ function App() {
             <MenuItem icon={<MdContactPhone />}>
               <Link to="/contact">{t('menu.contact')}</Link>
             </MenuItem>
-            <MenuItem onClick={() => setDarkMode(prev => !prev)}>
-              {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+          </Menu>
+          <div className="sidebar-footer">
+          <Menu>
+          <MenuItem onClick={() => setDarkMode(prev => !prev)}>
+            <motion.div
+              initial={false}
+              animate={{ rotate: darkMode ? 180 : 0 }}
+              transition={{ duration: 0.3 }}
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              {darkMode ? <MdLightMode size={20} /> : <MdDarkMode size={20} />}
+              </motion.div>
             </MenuItem>
             <MenuItem>
-              <select onChange={handleLanguageChange} value={i18n.language}>
+              <select className='language-select' onChange={handleLanguageChange} value={i18n.language}>
                 <option value="en">🇬🇧 English</option>
                 <option value="ua">🇺🇦 Українська</option>
                 <option value="pl">🇵🇱 Polski</option>
               </select>
             </MenuItem>
           </Menu>
+          </div>
+          </div>
         </Sidebar>
 
         <main className="page-content">

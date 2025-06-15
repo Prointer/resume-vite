@@ -5,14 +5,14 @@ import skillsData from '../data/skills.json'
 import '../styles/Skills.css'
 
 import {
-	FaBootstrap, FaCss3Alt, FaDocker, FaGitAlt, FaHtml5,
-	FaLinux, FaNodeJs, FaPaintBrush, FaPython, FaReact,
-	FaUsers, FaWindows
+  FaBootstrap, FaCss3Alt, FaDocker, FaGitAlt, FaHtml5,
+  FaLinux, FaNodeJs, FaPaintBrush, FaPython, FaReact,
+  FaUsers, FaWindows
 } from 'react-icons/fa'
 
 import {
-	SiJavascript, SiKubernetes, SiPostman,
-	SiTailwindcss, SiVite
+  SiJavascript, SiKubernetes, SiPostman,
+  SiTailwindcss, SiVite
 } from 'react-icons/si'
 
 import { BiConversation } from 'react-icons/bi'
@@ -84,8 +84,6 @@ function Skills() {
 
   return (
     <div className="skills-wrapper">
-      <h1>{t('skills.title')}</h1>
-
       <section>
         <h2>Hard Skills</h2>
         <div className="skills-grid">

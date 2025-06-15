@@ -26,5 +26,19 @@
       "ua": "Особистий сайт з резюме, навичками та галереєю проєктів."
     },
     "link": "https://yourportfolio.com"
-  }
+  },
+  {
+  "id": "3",
+  "title": {
+    "en": "Tech Gadgets Shop",
+    "pl": "Sklep z Gadżetami Technicznymi",
+    "ua": "Магазин Технічних Новинок"
+  },
+  "description": {
+    "en": "An online store for tech gadgets built with vanilla JS, Node.js, and MySQL. Includes email-based authentication.",
+    "pl": "Sklep internetowy z gadżetami technicznymi zbudowany w czystym JS, Node.js i MySQL. Logowanie przez e-mail.",
+    "ua": "Інтернет-магазин технічних новинок, створений на чистому JS, Node.js та MySQL. Авторизація через електронну пошту."
+  },
+  "link": "https://github.com/Prointer/shop.git"
+}
 ]
